@@ -1,0 +1,2 @@
+# EpicTask
+'EpicTask ': Trata-se de um projeto desenvolvido durante o curso Tecnólogo em Análise e Desenvolvimento de Sistemas, na FIAP (Faculdade de Informática e Administração Paulista). O projeto contempla a matéria de Digital Business Enablement. É um sistema web, criado através do framework Spring, o projeto visa o cadastro de task's (tarefas) para seus usuários, que poderão concluí-las através de uma "gamificação" na plataforma.
