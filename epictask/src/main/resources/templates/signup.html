@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>EpicTask | Sign Up</title>
+	<link rel="stylesheet" th:href="@{/css/signup.css}" />
+</head>
+<body>
+	<section>
+		<div class="color"></div>
+		<div class="color"></div>
+		<div class="color"></div>
+		<div class="box">
+			<div class="square" style="--i:0;"></div>
+			<div class="square" style="--i:1;"></div>
+			<div class="square" style="--i:2;"></div>
+			<div class="square" style="--i:3;"></div>
+			<div class="square" style="--i:4;"></div>
+			<div class="container">
+				<div class="form">
+					<h2>Sign Up</h2>
+					<form action="/signup" method="post" th:object="${user}">
+						<div class="inputBox">
+							<input type="text" placeholder="Username" th:field="*{name}">
+							<span id="error" th:errors="*{name}"></span>
+						</div>
+						<div class="inputBox">
+							<input type="email" placeholder="E-mail" th:field="*{email}">
+							<span id="error" th:errors="*{email}"></span>
+						</div>
+						<div class="inputBox">
+							<input type="password" placeholder="Password" th:field="*{password}">
+							<span id="error" th:errors="*{password}"></span>
+						</div>
+						<div class="inputBox">
+							<a href="/">Cancel</a>
+							<input type="submit" value="Register">
+						</div>
+						<p class="text">Have an account? <a href="/">Sign In</a></p>
+					</form>
+				</div>
+			</div>	
+		</div>
+	</section>
+</body>
+</html>
